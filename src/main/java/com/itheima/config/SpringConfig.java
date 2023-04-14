@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
@@ -19,6 +20,7 @@ import com.alibaba.druid.pool.DruidDataSource;
 @PropertySource("classpath:jdbc.properties")
 @MapperScan("com.itheima.mapper")
 @EnableTransactionManagement
+@EnableAspectJAutoProxy // AOP自动扫描
 public class SpringConfig {
     @Bean // Config datasource
     public DataSource dataSource(

@@ -2,4 +2,5 @@ com/itheima/test/TranscationDemo.class
 com/itheima/service/impl/AccountServiceImpl.class
 com/itheima/service/AccountService.class
 com/itheima/mapper/AccountMapper.class
+com/itheima/advice/TimeAdvice.class
 com/itheima/config/SpringConfig.class
